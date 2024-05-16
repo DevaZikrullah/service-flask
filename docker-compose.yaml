@@ -4,5 +4,10 @@ services:
   account-service:
     build: ./account-service
     ports:
-      - "5001:5000"
+      - "5111:5000"
+    restart: always
+  payment-service:
+    build: ./payment-service
+    ports:
+      - "5222:5000"
     restart: always
